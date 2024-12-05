@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Formulário</title>
+    <link rel="stylesheet" href="css/estilo1.css">
+
+</head>
+
+<body>
+    <div id="area">
+    <form  method=”post” action=”confirmar_dados.html” name=”formCadastro” />
+
+    <p align=”center”>
+        <font face=”Verdana” size=4 color=”blue”>Formulário de Cadastro</font>
+    </p>
+
+    <fieldset>
+        <legend>Identificação</legend>
+
+        <p>Nome: <input maxlength=”50” size=”50” name=”nome” /></p>
+        <p>Sexo: <input type="radio" name=”sexo” value=”M” />Masculino
+
+            <input type="radio" name=”sexo” value=”F” />Feminino
+        </p>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Endereço</legend>
+
+        <p>Endereço: <input maxlength=”50” size=”50” name=”endereco” /></p>
+
+        <p>Número: <input maxlength=”8” size=”8” name=”numero” /></p>
+
+        <p>Bairro: <input maxlength=”40” size=”40” name=”bairro” /></p>
+
+        <p>Cidade: <input maxlength=”40” size=”40” name=”cidade” /></p>
+
+        <p>Estado:<input maxlength="2" size="2" name="estado" /></p>
+    </fieldset>
+    <fieldset>
+        <legend>Formação e interesses</legend>
+    
+    <p>Grau de Formação
+        <select name=”formacao”>
+
+            <option value=”F”>Fundamental</option>
+
+            <option value=”M”>Médio</option>
+
+            <option value=”S”>Superior</option>
+
+            <option value=”P”>Pós-Graduado</option>
+    </p>
+    </select>
+
+    <p>Interesses</p>
+
+    <p><input type="checkbox" name=”computacao_grafica” value=”CG” />Computação gráfica</p>
+
+    <p><input type="checkbox" name=”linguagens” value=”LP” />Linguagem de programação</p>
+
+    <p><input type="checkbox" name=”banco_dados” value=”BD” />Banco de dados</p>
+
+    <p><input type="checkbox" name=”redes” value=”RC” />Redes de computadores</p>
+
+</fieldset>
+<div style="padding-bottom: 10%;padding-left: 10%; padding-top: 5%;">
+    <input name=”enviar” value=Enviar type="submit" class="button"/>
+
+    <input name=”limpar” value=Limpar type="reset" class="button" />
+</div>  
+
+    </form>
+</div>
+</body>
+
+</html>

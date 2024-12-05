@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p><label>Nome:<input type="text" id="nome" ></label></p>
+
+    <p><label>Idade:<input type="number" id="idade"></label></p>
+
+    <p><label>Email:<input type="email" id="email"></label></p>
+
+    <input type="button" onClick=agradece() value="Ok" >
+
+    <button onClick=agradece()> Ok </button>
+
+    <button onClick=testaIdade()>Testar Idade</button>
+    
+    <script>
+        //declara função agradece()
+        function agradece(){
+            //acessa conteúdo da caixa de texto nome
+            //e guarda em uma variável
+            var nome=document.getElementById("nome").value
+
+            //cria uma variável contendo a mensagem a ser exibida
+            var mensagem="Obrigado, "+nome
+
+            //exibe uma mensagem
+            window.alert(mensagem)
+        }
+
+        function testaIdade(){
+            //acessa conteúdo da caixa de texto idade
+            //e guarda em uma variável
+            var idade=document.getElementById("idade").value
+            var mensagem
+            //testa se(if) idade é maior ou igual a 18
+            if(idade>=18){
+                //se for verdadeiro, imprime esta mensagem
+                mensagem="Você é maior de idade"
+            }else{
+                //se for falso, imprime esta mensagem
+                mensagem="Você é menor de idade"
+            }
+            
+
+            //exibe uma mensagem
+            window.alert(mensagem)
+        }
+    </script>
+</body>
+</html>
